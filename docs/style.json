@@ -1,0 +1,257 @@
+{
+  "center": [
+    139.763947,
+    35.674032
+  ],
+  "layers": [
+    {
+      "id": "seamlessphoto",
+      "source": "i",
+      "type": "raster"
+    },
+    {
+      "id": "floor",
+      "paint": {
+        "fill-color": [
+          "rgb",
+          224,
+          224,
+          224
+        ],
+        "fill-opacity": 0.5
+      },
+      "source": "v",
+      "source-layer": "floor",
+      "type": "fill"
+    },
+    {
+      "id": "space",
+      "paint": {
+        "fill-color": [
+          "rgb",
+          77,
+          208,
+          225
+        ],
+        "fill-opacity": 0.25
+      },
+      "source": "v",
+      "source-layer": "space",
+      "type": "fill"
+    },
+    {
+      "id": "segment",
+      "paint": {
+        "fill-color": [
+          "rgb",
+          255,
+          241,
+          118
+        ],
+        "fill-opacity": 0.25
+      },
+      "source": "v",
+      "source-layer": "segment",
+      "type": "fill"
+    },
+    {
+      "id": "fixture",
+      "paint": {
+        "fill-color": [
+          "rgb",
+          129,
+          199,
+          132
+        ],
+        "fill-opacity": 0.8
+      },
+      "source": "v",
+      "source-layer": "fixture",
+      "type": "fill"
+    },
+    {
+      "id": "drawing",
+      "paint": {
+        "line-color": [
+          "rgb",
+          144,
+          164,
+          174
+        ]
+      },
+      "source": "v",
+      "source-layer": "drawing",
+      "type": "line"
+    },
+    {
+      "id": "opening",
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "line-width": 4
+      },
+      "source": "v",
+      "source-layer": "opening",
+      "type": "line"
+    },
+    {
+      "id": "line",
+      "paint": {
+        "line-color": [
+          "rgb",
+          255,
+          235,
+          59
+        ]
+      },
+      "source": "v",
+      "source-layer": "line",
+      "type": "line"
+    },
+    {
+      "id": "link",
+      "paint": {},
+      "source": "v",
+      "source-layer": "link",
+      "type": "line"
+    },
+    {
+      "id": "facility",
+      "paint": {
+        "circle-color": [
+          "rgb",
+          229,
+          57,
+          53
+        ],
+        "circle-radius": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          17,
+          1,
+          22,
+          6
+        ]
+      },
+      "source": "v",
+      "source-layer": "facility",
+      "type": "circle"
+    },
+    {
+      "id": "point",
+      "paint": {
+        "circle-radius": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          17,
+          1,
+          22,
+          6
+        ]
+      },
+      "source": "v",
+      "source-layer": "point",
+      "type": "circle"
+    },
+    {
+      "id": "node",
+      "paint": {
+        "circle-radius": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          17,
+          1,
+          22,
+          6
+        ]
+      },
+      "source": "v",
+      "source-layer": "node",
+      "type": "circle"
+    },
+    {
+      "id": "floor-3d",
+      "paint": {
+        "fill-extrusion-base": [
+          "*",
+          5,
+          3.66,
+          [
+            "+",
+            22.8,
+            [
+              "get",
+              "ordinal"
+            ]
+          ]
+        ],
+        "fill-extrusion-color": [
+          "rgb",
+          255,
+          183,
+          77
+        ],
+        "fill-extrusion-height": [
+          "*",
+          5,
+          3.66,
+          [
+            "+",
+            23,
+            [
+              "get",
+              "ordinal"
+            ]
+          ]
+        ],
+        "fill-extrusion-opacity": 0.8
+      },
+      "source": "v",
+      "source-layer": "floor",
+      "type": "fill-extrusion"
+    }
+  ],
+  "site_root": "http://localhost:9966",
+  "sources": {
+    "i": {
+      "attribution": "国土地理院",
+      "maxzoom": 18,
+      "tiles": [
+        "https://maps.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
+      ],
+      "type": "raster"
+    },
+    "v": {
+      "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/mlit-indoor-tokyo'>「東京駅周辺屋内地図データ」（国土交通省）</a>を加工して作成",
+      "maxzoom": 17,
+      "tiles": [
+        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8,
+  "zoom": 16
+}
