@@ -88,9 +88,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          0,
-          0,
-          0
+          91,
+          146,
+          229
         ],
         "line-width": 4
       },
@@ -106,7 +106,8 @@
           255,
           235,
           59
-        ]
+        ],
+        "line-width": 2
       },
       "source": "v",
       "source-layer": "line",
@@ -114,7 +115,12 @@
     },
     {
       "id": "link",
-      "paint": {},
+      "paint": {
+        "line-dasharray": [
+          2,
+          2
+        ]
+      },
       "source": "v",
       "source-layer": "link",
       "type": "line"
@@ -150,6 +156,12 @@
     {
       "id": "point",
       "paint": {
+        "circle-color": [
+          "rgb",
+          245,
+          127,
+          23
+        ],
         "circle-radius": [
           "interpolate",
           [
