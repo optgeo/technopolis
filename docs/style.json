@@ -233,7 +233,7 @@
       "type": "fill-extrusion"
     }
   ],
-  "site_root": "http://localhost:9966",
+  "site_root": "https://optgeo.github.io/technopolis",
   "sources": {
     "i": {
       "attribution": "国土地理院",
@@ -247,7 +247,7 @@
       "attribution": "<a href='https://www.geospatial.jp/ckan/dataset/mlit-indoor-tokyo'>「東京駅周辺屋内地図データ」（国土交通省）</a>を加工して作成",
       "maxzoom": 17,
       "tiles": [
-        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+        "https://optgeo.github.io/technopolis/zxy/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }
